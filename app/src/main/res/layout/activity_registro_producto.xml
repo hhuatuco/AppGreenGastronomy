@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context=".RegistroProducto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/header"
+        android:orientation="vertical"
+        android:background="@color/colorVerdePrincipal">
+        <TextView
+            android:id="@+id/tvTituloProducto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Registro de Producto"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="#FFF"/>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/wave"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/header"
+        android:background="@drawable/wave"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/wave"
+        android:padding="15dp"
+        android:gravity="center_horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:counterEnabled="true"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:background="@color/colorBlanco">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre"
+                android:inputType="text"
+                android:id="@+id/etNombre"
+                android:maxLength="250"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:counterEnabled="true"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:background="@color/colorBlanco">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Descripcion"
+                android:inputType="text"
+                android:id="@+id/etDescripcion"
+                android:maxLength="250"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:counterEnabled="true"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:background="@color/colorBlanco">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Precio del producto"
+                android:inputType="numberDecimal"
+                android:id="@+id/etPrecio"
+                android:maxLength="15"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar"
+            android:textColor="#000"
+            android:background="@drawable/btn_fondo_color"
+            android:layout_marginTop="30dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

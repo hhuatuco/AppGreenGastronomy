@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/recycler_fondo_usuario"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/imageFriends"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_food"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp">
+            <TextView
+                android:id="@+id/tvNombreProducto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menú Ensalada"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/colorBlanco"/>
+
+            <TextView
+                android:id="@+id/tvDescripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="210 GR."
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlanco"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="S/. "
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlanco"/>
+                <TextView
+                    android:id="@+id/tvPrecio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlanco"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp">
+
+            <ImageView
+                android:id="@+id/ivEditarMenu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/ic_edit"
+                android:layout_gravity="center_vertical|end"/>
+            <ImageView
+                android:id="@+id/ivEliminarMenu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_delete"
+                android:layout_gravity="center_vertical|end"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
